@@ -1,0 +1,2 @@
+sydney-py
+discord.py-self
