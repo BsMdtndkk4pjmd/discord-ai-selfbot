@@ -44,7 +44,7 @@ try:
         token=f'{os.getenv("BARD_COOKIE")}',
     )
 except:
-    print("Bard cookie not set or has expired, so only ChatGPT will be available.")
+    print("Bard Cookieが設定されていないか、有効期限が切れているため、ChatGPTのみが使用可能になります")
     sleep(5)
 
 
