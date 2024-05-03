@@ -482,7 +482,7 @@ async def model(ctx, mode: str):
 bot.remove_command("help")
 
 
-@bot.command(name="help", description="Get all other commands!")
+@bot.command(name="help", description="Get all other commands")
 async def help(ctx):
     help_text = """```
 Bot Commands:
@@ -497,7 +497,7 @@ Bot Commands:
 ~analyse @user - Analyse a user's messages to provide a personality profile
 ~model [BARD / GPT] - Change whether the bot uses BARD or ChatGPT
 
-Created by Flanted```
+Created by Rucy```
 """
 
     await ctx.send(help_text)
