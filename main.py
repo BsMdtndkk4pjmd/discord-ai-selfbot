@@ -31,7 +31,7 @@ active_channels = set()
 
 @bot.event
 async def on_ready():
-    print(f"{bot.user.name} として正常にログインしました")
+    print(f"AI Selfbot successfully logged in as {bot.user.name}.")
 
 
 if os.name == "nt":
@@ -44,7 +44,7 @@ try:
         token=f'{os.getenv("BARD_COOKIE")}',
     )
 except:
-    print("Bard Cookieが設定されていないか、有効期限が切れているため、ChatGPTのみが使用可能になります")
+    print("Bard cookie not set or has expired, so only ChatGPT will be available.")
     sleep(5)
 
 
@@ -482,7 +482,7 @@ async def model(ctx, mode: str):
 bot.remove_command("help")
 
 
-@bot.command(name="help", description="Get all other commands")
+@bot.command(name="help", description="Get all other commands!")
 async def help(ctx):
     help_text = """```
 Bot Commands:
